@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "DashBoard";
+}
+<body>
+
+        <h1 class="pagename">@ViewData["Title"]</h1><hr />
+        <div class="borderwith">
+        <div class="dashlist">
+            <a class="alist" asp-area="" asp-controller="Account" asp-action="MyOfferingList">My offering list</a><br />
+        </div>
+        <div class="dashlist">
+            <a class="alist" asp-area="" asp-controller="Account" asp-action="MyRequestingList">My requesting list</a><br />
+        </div>        
+        <div class="dashlist">
+            <a class="alist" asp-area="" asp-controller="Account" asp-action="Offering">Offering</a><br />
+        </div>
+        <div class="dashlist">
+            <a class="alist" asp-area="" asp-controller="Account" asp-action="Requesting">Requesting</a><br />
+        </div>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container" id="footer-text">
+            &copy; 2021
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
